@@ -9,62 +9,83 @@
     <title>Cuna Nube - El descanso de tu bebé</title>
  
     <style>
-           body {
+    body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-            background-color: #f5f7fa;
+            background-color: #f4f9f9;
             color: #333;
+            line-height: 1.6;
         }
 
         header {
-            background: #003049;
+            background: linear-gradient(to right, #1d3557, #457b9d);
             color: white;
-            padding: 30px;
+            padding: 80px 10%;
             text-align: center;
         }
 
-        nav {
-            background: #d62828;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 40px 10%;
-            background: white;
+        header h1 {
+            font-size: 2.5rem;
             margin-bottom: 20px;
         }
 
-        h2 {
-            color: #003049;
+        header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .cta-btn {
+            background: #e63946;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        section {
+            padding: 60px 10%;
+            background: white;
+        }
+
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .benefit {
+            background: #f1f7f7;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .benefit span {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            background: #f1faee;
+            text-align: center;
         }
 
         footer {
-            background: #003049;
+            background: #1d3557;
             color: white;
             text-align: center;
             padding: 30px;
             font-size: 0.9rem;
         }
 
-        footer a {
-            color: #fcbf49;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
         @media (max-width: 768px) {
-            section {
-                padding: 30px 5%;
+            header h1 {
+                font-size: 2rem;
             }
         }
     </style>
@@ -72,76 +93,79 @@
 <body>
 
 <header>
-    <h1>Autoescuela Horizonte</h1>
-    <p>Formación vial de calidad en Almería</p>
+    <h1>Muévete por Almería sin coche, con tu bebé</h1>
+    <p>
+        El Ayuntamiento de Almería impulsa el uso de mochilas de porteo como alternativa
+        cómoda y sostenible al coche en los desplazamientos diarios con bebés.
+    </p>
+    <a href="#oferta" class="cta-btn">Descubre la oferta subvencionada</a>
 </header>
 
-<nav>
-    <a href="#teorica">Teórica</a>
-    <a href="#practica">Práctica</a>
-    <a href="#consejos">Consejos</a>
-    <a href="#contacto">Contacto</a>
-</nav>
-
-<section id="teorica">
-    <h2>Formación teórica</h2>
-    <p>
-        La formación teórica es una parte fundamental del proceso para obtener el permiso de conducir.
-        En Autoescuela Horizonte ofrecemos clases actualizadas conforme a la normativa vigente de la
-        Dirección General de Tráfico (DGT).
-    </p>
-    <p>
-        Nuestros contenidos incluyen señales de tráfico, normas de circulación, seguridad vial y
-        comportamiento responsable en la vía pública.
-    </p>
-</section>
-
-<section id="practica">
-    <h2>Clases prácticas de conducción</h2>
-    <p>
-        Las clases prácticas permiten al alumno adquirir experiencia real al volante en situaciones
-        de tráfico cotidiano. Nuestros instructores acompañan al alumno de forma personalizada,
-        adaptando el ritmo de aprendizaje a cada persona.
-    </p>
-    <p>
-        La práctica constante mejora la confianza, la anticipación y la toma de decisiones seguras
-        durante la conducción.
-    </p>
-</section>
-
-<section id="consejos">
-    <h2>Consejos de seguridad vial</h2>
-    <p>
-        Respetar los límites de velocidad, mantener la distancia de seguridad y evitar distracciones
-        son aspectos clave para reducir el riesgo de accidentes.
-    </p>
-    <p>
-        La formación continua y la concienciación vial contribuyen a crear entornos de tráfico más
-        seguros para todos los usuarios.
-    </p>
-</section>
-
 <section>
-    <h2>Información para futuros conductores</h2>
+    <h2>¿Por qué apostar por el porteo?</h2>
+    <div class="benefits">
+        <div class="benefit">
+            <span>🚶‍♂️</span>
+            <h3>Menos tráfico</h3>
+            <p>
+                Reducir los desplazamientos en coche ayuda a disminuir la congestión
+                en las principales vías de Almería.
+            </p>
+        </div>
+        <div class="benefit">
+            <span>👶</span>
+            <h3>Más cercanía</h3>
+            <p>
+                El porteo fortalece el vínculo entre padres e hijos durante los primeros
+                meses de vida.
+            </p>
+        </div>
+        <div class="benefit">
+            <span>🌱</span>
+            <h3>Movilidad sostenible</h3>
+            <p>
+                Una alternativa respetuosa con el medio ambiente y alineada con los
+                objetivos de sostenibilidad urbana.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="highlight">
+    <h2>Una solución pensada para familias jóvenes</h2>
     <p>
-        Obtener el permiso de conducir es un paso importante que conlleva responsabilidad. Antes de
-        iniciar el proceso, es recomendable informarse sobre los requisitos, plazos y costes asociados.
+        Las mochilas de porteo ergonómicas permiten moverse con libertad por la ciudad,
+        acceder al transporte público y realizar desplazamientos cortos sin depender
+        del coche.
     </p>
     <p>
-        Este sitio web tiene una finalidad informativa y educativa, ofreciendo recursos útiles para
-        personas interesadas en la formación vial.
+        Están diseñadas para padres y madres entre 25 y 40 años que buscan comodidad,
+        seguridad y practicidad en su día a día.
     </p>
 </section>
 
-<footer id="contacto">
-    <p>&copy; 2026 Autoescuela Horizonte - Almería</p>
+<section id="oferta">
+    <h2>Oferta especial subvencionada</h2>
     <p>
-        <a href="privacidad.html">Política de privacidad</a> |
-        <a href="cookies.html">Política de cookies</a>
+        Gracias a la colaboración con el Ayuntamiento de Almería, ponemos a disposición
+        de las familias una promoción especial en mochilas de porteo ergonómicas.
     </p>
+    <p>
+        <strong>Descuento exclusivo por tiempo limitado</strong> para fomentar una
+        movilidad más sostenible en la ciudad.
+    </p>
+    <br>
+    <a href="#" class="cta-btn">Solicitar información</a>
+</section>
+
+<footer>
+    <p>&copy; 2026 Movilidad Familiar Almería</p>
+    <p>Campaña de concienciación sobre movilidad sostenible y crianza responsable</p>
 </footer>
 
+
 </html>
+
 
 
 
